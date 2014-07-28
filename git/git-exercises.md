@@ -10,7 +10,7 @@ if you're feeling brave, using shell commands.  A sample series of commands migh
 $mkdir git-project
 
 $cp -r (link) git-project/
-~~
+~~~
 
 Look around at the files you've just moved.  If you have time, please make an account on GitHub - we'll need it later in the lesson.  
 
