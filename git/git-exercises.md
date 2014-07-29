@@ -2,7 +2,7 @@
 
 ##Pre-Lesson
 
-Create a new directory, called `git-project`, NOT inside the directory we used yesterday (see diagram on board).  
+Create a new directory, called `git-project`, NOT inside the directory we used this morning (see diagram on board).  
 Then copy the directory `project_files` from the cloned git directory to this one.  You can do this using your mouse, or, 
 if you're feeling brave, using shell commands.  A sample series of commands might be: 
 
@@ -45,24 +45,21 @@ What if you wanted to work on material in someone else’s directory/repository th
 Pair up with someone next to you.  Go out of `project_files` into `git-project`.  (`cd ..`)  Then clone your neighbor's repository to your computer using:
 
 ~~~
-git clone (https://github.com/ ... ) (choose a name for the cloned directory on your computer)
+git clone (https://github.com/ ... )
 ~~~
 
 Go into the cloned repository (use `cd`) and add a file named "paper.txt", with a title and both of you listed as authors.  Stage + commit the file.  Now try pushing to their repository (which should be named `origin`).  What happens?  
 
 ###2
-After your partner has added you to their repository on github, try pushing again.  Look at what your partner has pushed to your online repository.  How do you get their additions to your files into your local copy?  
+After your partner has added you to their repository on github, try pushing again.  
 
 ###3
-Make changes in your copy of `paper.txt`.  Push them to your repository.  
+Switch over to your original directory and make your own file `paper.txt`.  Commit the new file and try to push your commit to your online repository.  What happens?  
 
 ###4
-Switch to your local copy of your partner's repostitory and edit their paper (make lots of changes - delete things, add a paragraph, whatever).  **Don't pull from your partner's repository beforehand.** Now try to push your changes to their online repository.  What happens?  
-
-###5
 Pull down their changes.  What happens now?  
 
-###6
+###5
 Via `git push` and `git pull`, write a biography for yourself in both your copy of the paper and your partner's copy, so at the end, each of you has both biographies in their copy of `paper.txt`.   
 
 ## Review

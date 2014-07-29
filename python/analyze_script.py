@@ -1,0 +1,33 @@
+import sys
+import numpy as np
+from matplotlib import pyplot as plt
+
+def analyze(filename):
+    data = np.loadtxt(fname=filename, delimiter=',')
+    
+    plt.figure(figsize=(10.0, 3.0))
+    
+    plt.subplot(1, 3, 1)
+    plt.ylabel('average')
+    plt.plot(data.mean(0))
+    
+    plt.subplot(1, 3, 2)
+    plt.ylabel('max')
+    plt.plot(data.max(0))
+    
+    plt.subplot(1, 3, 3)
+    plt.ylabel('min')
+    plt.plot(data.min(0))
+    
+    plt.tight_layout()
+    plt.show()
+
+def main():
+    script = sys.argv[0]
+    #action = sys.argv[1]
+    filenames = sys.argv[1:]
+	
+    for file in filenames:
+		analyze(file)
+	
+main()
